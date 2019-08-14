@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  background-color: rgba(191, 251, 253, 0.404);
+}
+
+.app-wrapper {
+  margin: 0px;
+}
+.app-container {
+  margin: 0px;
+}
+.splash-page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../static/assets/images/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}

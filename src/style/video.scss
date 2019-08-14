@@ -1,0 +1,18 @@
+.splash-video-container {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  align-self: center;
+  height: 720px;
+  width: 1080px;
+  padding: 40px;
+
+  .videos {
+    display: flex;
+    align-self: center;
+    &:hover {
+      transition: width 0.25s;
+      width: 110%;
+    }
+  }
+}

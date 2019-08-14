@@ -1,0 +1,59 @@
+.splash-digArt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  .digArt-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .item1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      display: flex;
+      max-width: 100%;
+      max-height: 100%;
+      justify-items: center;
+      align-items: center;
+      .item-wrapper {
+        height: 95%;
+        width: 95%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      &:hover {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .item2 {
+      display: flex;
+      max-width: 100%;
+      max-height: 100%;
+      .item-wrapper {
+        height: 90%;
+        width: 90%;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      &:hover {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
