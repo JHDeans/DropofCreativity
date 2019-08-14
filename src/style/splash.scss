@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  background-color: rgba(191, 251, 253, 0.404);
+  width: 100%;
+  margin: 0;
 }
 
 .app-wrapper {
@@ -13,12 +13,10 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  background-image: url("../../static/assets/images/background.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   justify-content: center;
   align-items: center;
+
+  .hero-section {
+    height: 1000px;
+  }
 }
