@@ -4,7 +4,7 @@
   background-color: $off-white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   .navbar-wrapper {
     height: 2100px;
@@ -12,6 +12,8 @@
     background-color: transparent;
     background-image: url("../../static/assets/images/dropofcreativity-splash-page-color.png");
     background-position: 100% 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,8 +27,8 @@
       align-items: center;
 
       img {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 80%;
       }
     }
 
@@ -41,37 +43,30 @@
         height: 50px;
         width: 150px;
         cursor: pointer;
+        border: 5px solid transparent;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1s ease-in-out;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          border: 5px solid $indigo;
+        }
+
+        &:active {
+          border: 5px solid $dark-indigo;
+        }
 
         a {
-          height: 42px;
-          width: 142px;
           font-size: 1.3em;
           font-weight: 700;
-          background-color: $off-white;
-          border-radius: 5px;
           font-family: sans-serif;
           color: black;
           text-decoration: none;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        &:hover {
-          background-image: linear-gradient(
-            to right,
-            $bubblegum-pink,
-            $sunflower-orange,
-            $sunburst-yellow,
-            $grass-green,
-            $indigo-blue,
-            $lilac
-          );
         }
       }
     }
