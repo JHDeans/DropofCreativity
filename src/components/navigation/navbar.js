@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 
-import Logo from "../../../static/images/logos/Logo.png";
+import Logo from "../../../static/assets/images/logos/Logo.png";
 
 import Home from "../pages/home";
 import Grid from "../pages/grid";

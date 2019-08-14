@@ -1,7 +1,5 @@
 import React from "react";
 
-import Clouds from "../../../static/images/Scenery/clouds-dark.jpg";
-
 const Login = () => {
   return (
     <div className="login-wrapper">
