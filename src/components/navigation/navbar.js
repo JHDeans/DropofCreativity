@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 
-import Logo from "../../../static/images/logos/Logo.png";
+import Logo from "../../../static/images/Logos/Ingress_Logo.png";
 
 import Home from "../pages/home";
 import Grid from "../pages/grid";
@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
             <div className="right-side-wrapper">
               <div className="client-name">
-                <h1>DROPOFCREATIVITY</h1>
+                <h1>CLIENT NAME</h1>
               </div>
               <div className="bottom-wrapper">
                 <div className="links-wrapper">
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div className="link-wrapper">
-                    <Link to="/grid">GALLARY</Link>
+                    <Link to="/grid">GRID</Link>
                   </div>
                   <div className="link-wrapper">
                     <Link to="/contact">CONTACT</Link>
