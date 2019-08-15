@@ -1,10 +1,12 @@
 import React from "react";
+import Navbar from "../navigation/navbar";
 
 import Navbar from "../navigation/navbar";
 
 const Home = () => {
   return (
     <div className="homepage-wrapper">
+      <Navabr />
       <div className="hero-section">
         <Navbar />
       </div>

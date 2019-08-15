@@ -18,11 +18,13 @@ const Navbar = () => {
     <BrowserRouter>
       <div className="navbar-container">
         <div className="navbar-wrapper">
+
           <div className="links-wrapper">
             <div className="link-wrapper">
               <Link exact to="/">
                 Homepage
               </Link>
+
             </div>
           </div>
         </div>
