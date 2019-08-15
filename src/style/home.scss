@@ -1,14 +1,21 @@
 .homepage-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../static/assets/images/dropofcreativity-splash-page-color.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+
   .hero-section {
-    height: 100%;
-    width: 100%;
-    background-image: url("../../static/assets/images/dropofcreativity-splash-page-color.png");
-    background-position: 100% 10%;
-    background-size: 100%;
-    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+  .content-box {
+    display: flex;
+    justify-content: space-between;
   }
 }
