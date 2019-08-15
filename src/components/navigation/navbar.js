@@ -18,23 +18,13 @@ const Navbar = () => {
     <BrowserRouter>
       <div className="navbar-container">
         <div className="navbar-wrapper">
-          <div className="mono-color-drop-logo">
-            <img src={ImageLogo} />
-          </div>
+
           <div className="links-wrapper">
             <div className="link-wrapper">
               <Link exact to="/">
-                HOME
+                Homepage
               </Link>
-            </div>
-            <div className="link-wrapper">
-              <Link to="/grid">GALLARY</Link>
-            </div>
-            <div className="link-wrapper">
-              <Link to="/contact">CONTACT</Link>
-            </div>
-            <div className="link-wrapper">
-              <Link to="/login">LOGIN</Link>
+
             </div>
           </div>
         </div>
