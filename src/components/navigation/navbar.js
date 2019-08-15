@@ -15,41 +15,38 @@ import Login from "../pages/login";
 
 const Navbar = () => {
   return (
-    <div className="page-container">
-      <BrowserRouter>
-        <div className="navbar-container">
-          <div className="navbar-wrapper">
-            <div className="client-name">
-              <img src={ImageLogo} />
+    <BrowserRouter>
+      <div className="navbar-container">
+        <div className="navbar-wrapper">
+          <div className="mono-color-drop-logo">
+            <img src={ImageLogo} />
+          </div>
+          <div className="links-wrapper">
+            <div className="link-wrapper">
+              <Link exact to="/">
+                HOME
+              </Link>
             </div>
-
-            <div className="links-wrapper">
-              <div className="link-wrapper">
-                <Link exact to="/">
-                  HOMEPAGE
-                </Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/grid">GALLARY</Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/contact">CONTACT</Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/login">LOGIN</Link>
-              </div>
+            <div className="link-wrapper">
+              <Link to="/grid">GALLARY</Link>
+            </div>
+            <div className="link-wrapper">
+              <Link to="/contact">CONTACT</Link>
+            </div>
+            <div className="link-wrapper">
+              <Link to="/login">LOGIN</Link>
             </div>
           </div>
-
-          <Switch>
-            <Route exact path="/" component={Splash} />
-            <Route path="/grid" component={Gallary} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/login" component={Login} />
-          </Switch>
         </div>
-      </BrowserRouter>
-    </div>
+
+        <Switch>
+          <Route exact path="/" component={Splash} />
+          <Route path="/grid" component={Gallary} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 };
 

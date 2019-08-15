@@ -1,82 +1,83 @@
 .navbar-container {
-  min-height: 100%;
-  max-width: 100%;
-  background-color: $off-white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  .navbar-wrapper {
-    height: 2500px;
-    width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.navbar-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
 
-    background-color: transparent;
-    background-image: url("../../static/assets/images/dropofcreativity-splash-page-color.png"),
-      url("../../static/assets/images/dsc_6138.jpg");
-    background-size: 100% auto, 100% auto;
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .mono-color-drop-logo {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
-    .client-name {
-      width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+
+    img {
       height: auto;
+      width: 50%;
+      padding: 40px;
+    }
+  }
+
+  .links-wrapper {
+    height: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    z-index: 4;
+
+    .link-wrapper {
+      height: auto;
+      width: 100%;
+      padding: 30px;
+      cursor: pointer;
+      border-radius: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: 1s ease-in-out;
 
-      img {
-        height: auto;
-        width: 75%;
-      }
-    }
-
-    .links-wrapper {
-      height: 5%;
-      width: 50%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-
-      .link-wrapper {
-        height: 50px;
-        width: 150px;
-        cursor: pointer;
-        border-radius: 10px;
+      a {
+        height: 10%;
+        width: 100%;
+        font-size: 1.3em;
+        font-weight: 700;
+        background-color: $off-white;
+        border-radius: 5px;
+        font-family: sans-serif;
+        color: black;
+        text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 1s ease-in-out;
+      }
 
-        a {
-          height: 42px;
-          width: 142px;
-          font-size: 1.3em;
-          font-weight: 700;
-          background-color: $off-white;
-          border-radius: 5px;
-          font-family: sans-serif;
-          color: black;
-          text-decoration: none;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        &:hover {
-          background-image: linear-gradient(
-            to right,
-            $bubblegum-pink,
-            $sunflower-orange,
-            $sunburst-yellow,
-            $grass-green,
-            $indigo-blue,
-            $lilac
-          );
-        }
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          $bubblegum-pink,
+          $sunflower-orange,
+          $sunburst-yellow,
+          $grass-green,
+          $indigo-blue,
+          $lilac
+        );
       }
     }
   }
