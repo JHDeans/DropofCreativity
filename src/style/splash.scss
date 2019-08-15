@@ -1,33 +1,6 @@
-.app-wrapper {
-  width: 100%;
-  height: auto;
-  min-width: 500px;
-  margin: 0;
-  .page-container {
+.splash-page-container {
+  display: flex;
+  img {
     width: 100%;
-    height: auto;
-    .splash-color {
-      width: 100%;
-      background-repeat: no-repeat;
-      background-position: contain;
-
-      .app-wrapper {
-        margin: 0px;
-
-        .app-container {
-          margin: 0px;
-
-          .splash-page-container {
-            height: auto;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            height: 1000px;
-          }
-        }
-      }
-    }
   }
 }

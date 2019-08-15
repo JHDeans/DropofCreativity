@@ -1,14 +1,11 @@
 import React from "react";
-import Navbar from "../navigation/navbar";
-
-import Navbar from "../navigation/navbar";
+import NavLinks from "../navigation/navlinks";
 
 const Home = () => {
   return (
     <div className="homepage-wrapper">
-      <Navabr />
       <div className="hero-section">
-        <Navbar />
+        <NavLinks />
       </div>
       <div className="content-box">
         <h1>Content goes here</h1>
