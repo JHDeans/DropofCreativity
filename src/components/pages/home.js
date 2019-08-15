@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../navigation/navbar";
 
 const Home = () => {
   return (
