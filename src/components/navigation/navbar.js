@@ -15,41 +15,26 @@ import Login from "../pages/login";
 
 const Navbar = () => {
   return (
-    <div className="page-container">
-      <BrowserRouter>
-        <div className="navbar-container">
-          <div className="navbar-wrapper">
-            <div className="client-name">
-              <img src={ImageLogo} />
-            </div>
-
-            <div className="links-wrapper">
-              <div className="link-wrapper">
-                <Link exact to="/">
-                  HOMEPAGE
-                </Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/grid">GALLARY</Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/contact">CONTACT</Link>
-              </div>
-              <div className="link-wrapper">
-                <Link to="/login">LOGIN</Link>
-              </div>
+    <BrowserRouter>
+      <div className="navbar-container">
+        <div className="navbar-wrapper">
+          <div className="links-wrapper">
+            <div className="link-wrapper">
+              <Link exact to="/">
+                Homepage
+              </Link>
             </div>
           </div>
-
-          <Switch>
-            <Route exact path="/" component={Splash} />
-            <Route path="/grid" component={Gallary} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/login" component={Login} />
-          </Switch>
         </div>
-      </BrowserRouter>
-    </div>
+
+        <Switch>
+          <Route exact path="/" component={Splash} />
+          <Route path="/grid" component={Gallary} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 };
 

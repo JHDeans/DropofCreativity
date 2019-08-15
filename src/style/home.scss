@@ -1,0 +1,14 @@
+.homepage-wrapper {
+  .hero-section {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../static/assets/images/dropofcreativity-splash-page-color.png");
+    background-position: 100% 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
