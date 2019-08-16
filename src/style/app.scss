@@ -1,10 +1,20 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 }
-.app-container {
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
   width: 100%;
   height: auto;
-  min-width: 500px;
+  background: $off-white;
+  min-width: 400px;
+
   margin: 0;
   .page-container {
     width: 100%;
@@ -14,20 +24,12 @@ body {
       background-repeat: no-repeat;
       background-position: contain;
 
-      .app-wrapper {
-        margin: 0px;
-
-        .app-container {
-          margin: 0px;
-
-          .splash-page-container {
-            height: auto;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-        }
+      .splash-page-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
