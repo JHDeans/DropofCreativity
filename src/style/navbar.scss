@@ -1,24 +1,44 @@
 .navbar-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: flex-end;
+  align-self: center;
+  justify-self: center;
   height: 100vh;
   width: 100%;
 
-  .links-wrapper {
+  .splash {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .links-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
     width: 50%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
 
     .link-wrapper {
       height: auto;
-      width: 100%;
+      width: 25%;
       padding: 20px;
       cursor: pointer;
       border-radius: 10px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       transition: 1s ease-in-out;
 
       a {
