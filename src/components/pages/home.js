@@ -1,14 +1,16 @@
 import React from "react";
 import NavLinks from "../navigation/navlinks";
 
+import Salute from "../../../static/assets/images/ryansalute.jpg";
+
 const Home = () => {
   return (
     <div className="homepage-wrapper">
-      <div className="hero-section">
-        <NavLinks />
-      </div>
+      <NavLinks />
+      <div className="hero-section" />
+
       <div className="content-box">
-        <h1>Content goes here</h1>
+        <img scr={Salute} className="ryan-salute" alt="Salute" />
       </div>
     </div>
   );

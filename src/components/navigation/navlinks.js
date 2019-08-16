@@ -1,9 +1,11 @@
 import React from "react";
 import { NavLink as Link } from "react-router-dom";
+import Splash from "../../../static/assets/images/dropofcreativity-splash-page-color.png";
 
-const Navbar = () => {
+const NavLinks = () => {
   return (
     <div className="navbar-container">
+      <img src={Splash} className="splash" />
       <div className="links-wrapper">
         <div className="link-wrapper">
           <Link exact to="/">
@@ -12,7 +14,7 @@ const Navbar = () => {
         </div>
         <div className="link-wrapper">
           <Link exact to="/">
-            GALLARY
+            GALLERY
           </Link>
         </div>
         <div className="link-wrapper">
@@ -30,4 +32,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavLinks;
